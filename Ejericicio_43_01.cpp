@@ -9,22 +9,26 @@
 
 // Número de ejericio: 43
 
-// Problema planteado:
+// Problema planteado:. Obtener el promedio de números enteros positivos introducidos por teclado, el
+//algoritmo se detiene cuando se lea un número negativo o cero.
 #include <iostream>
 
-int main(){
+int main()
+{
+    // Inicializar la suma (a) en 0 y el número (n) en 1
     float a=0,n=1;
+    // Inicializar el contador (b) en 0
     int b=0;
     while (n>0){
-        std::cout<<"Escribe un numero: \n";
-            std::cin>>n;
+        cout<<"Escribe un numero: \n";
+            cin>>n;
         if (n>0)
         {
             b++;
             a=a+n;
         }
     }
-    std::cout<<"El promedio es: "<<a/b<<" \n";
+    cout<<"El promedio es: "<<a/b<<" \n";
     system("pause");
     return 0;
 }

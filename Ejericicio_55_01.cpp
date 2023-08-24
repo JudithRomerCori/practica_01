@@ -9,18 +9,22 @@
 
 // Número de ejericio: 55
 
-// Problema planteado:
+// Problema planteado:Generar las secuencias:
 #include <iostream>
 
 int main(){
     float n,d=0;
-    std::cout<<"Introduzca un numero inicial de la secuencia: \n";
-    std::cin>>n;
-    for(int i=n;i>=1;i--){
+    cout<<"Introduzca un numero inicial de la secuencia: \n";
+    cin>>n;
+
+    // Bucle externo que controla el número de filas en la secuencia
+    for(int i=n;i>=1;i--)
+        {
+     // Bucle interno que imprime los números en cada fila
         for(int j=1;j<=i;j++){
-        std::cout<<j<<" ";
+        cout<<j<<" ";
         }
-        std::cout<<" \n";
+        cout<<" \n";
     }
     system("pause");
     return 0;

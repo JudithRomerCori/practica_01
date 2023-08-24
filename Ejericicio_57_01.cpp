@@ -9,17 +9,23 @@
 
 // Número de ejericio: 57
 
-// Problema planteado:
+// Problema planteado:Encontrar cuadrados perfectos en el rango 1 a n
 #include <iostream>
 
 int main(){
     float n,d=0;
-    std::cout<<"Introduzca el rango: \n";
-    std::cin>>n;
-    for(int i=1;i<=n;i++){
-        if(i*i<=n){
-            std::cout<<"Numero "<<i<<" \n";
-            std::cout<<"Valor cuadrado "<<i*i<<" \n";
+    cout<<"Introduzca el rango: \n";
+    cin>>n;
+
+    // Itera desde 1 hasta n para encontrar los números cuyo cuadrado sea menor o igual a n.
+    for(int i=1;i<=n;i++)
+    {
+        // Comprueba si el cuadrado de i es menor o igual a n.
+        if(i*i<=n)
+        {
+
+            cout<<"Numero "<<i<<" \n";
+            cout<<"Valor cuadrado "<<i*i<<" \n";
         }
     }
     system("pause");

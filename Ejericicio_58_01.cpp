@@ -9,21 +9,23 @@
 
 // Número de ejericio: 58
 
-// Problema planteado:
+// Problema planteado:Generar:
 #include <iostream>
 
 int main(){
     float n,d=0;
-    std::cout<<"Introduzca un numero de filas a generar: \n";
-    std::cin>>n;
+     // Solicita al usuario el número de filas a generar.
+    cout<<"Introduzca un numero de filas a generar: \n";
+    cin>>n;
     for(int i=1;i<=n;i++){
+              // Imprime la segunda mitad de números en la fila, descendiendo.
         for(int j=0;j<=i;j++){
-            std::cout<<j+1<<" ";
+            cout<<j+1<<" ";
         }
         for(int j=i;j>=1;j--){
-            std::cout<<j<<" ";
+            cout<<j<<" ";
         }
-        std::cout<<" \n";
+        cout<<" \n";
     }
     system("pause");
     return 0;

@@ -9,19 +9,24 @@
 
 // Número de ejericio: 54
 
-// Problema planteado:
+// Problema planteado:Hallar la raíz cuadrada de un número por aproximaciones, utilizar:
+//http://es.wikipedia.org/wiki/C%C3%A1lculo_de_la_ra%C3%ADz_cuadrada
+//(Algoritmo Babilónico)
 #include <iostream>
 
 int main(){
     float h,b,x,d=0;
-    std::cout<<"Introduzca un numero: \n";
-    std::cin>>x;
+    // Solicitar al usuario que ingrese un número
+    cout<<"Introduzca un numero: \n";
+    cin>>x;
+
+    // Inicializar 'b' con el valor de 'x'
     b=x;
     for(int i=0;i<=200;i++){
         h=0.5*((x/b)+b);
         b=h;
     }
-    std::cout<<"El resultado es: "<<b<<" \n";
+    cout<<"El resultado es: "<<b<<" \n";
     system("pause");
     return 0;
 }

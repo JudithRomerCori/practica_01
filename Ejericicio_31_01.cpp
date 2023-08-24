@@ -13,7 +13,8 @@
 
 #include <iostream>
 
-int main(){
+int main()
+{
     int a,b;
     // Solicitar al usuario ingresar el primer número
     cout<<"Escribe el primer numero: \n";

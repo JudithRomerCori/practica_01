@@ -9,15 +9,18 @@
 
 // Número de ejericio: 52
 
-// Problema planteado:
+// Problema planteado:Obtener xy utilizando productos sucesivos, tanto x como y son enteros positivos o
+//negativos.
 #include <iostream>
 
 int main(){
     int a,b,c=0,d=0;
-    std::cout<<"Introduzca un numero: \n";
-    std::cin>>a;
-    std::cout<<"Introduzca el multiplicador: \n";
-    std::cin>>b;
+
+    // Solicitar al usuario que ingrese el número y el multiplicador
+    cout<<"Introduzca un numero: \n";
+    cin>>a;
+    cout<<"Introduzca el multiplicador: \n";
+    cin>>b;
     if (b<0 && a<0){
         d=1;
         b=b*(-1);
@@ -37,7 +40,7 @@ int main(){
     if (d==1){
         c=c*(-1);
     }
-    std::cout<<"El resultado es: "<<c<<" \n";
+    cout<<"El resultado es: "<<c<<" \n";
     system("pause");
     return 0;
 }

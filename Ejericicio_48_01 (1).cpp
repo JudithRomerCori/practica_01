@@ -9,15 +9,19 @@
 
 // Número de ejericio: 48
 
-// Problema planteado:
+// Problema planteado:Dado un rango (A y B) de números enteros, obtener la cantidad de números pares que
+//contiene dicho rango.
 #include <iostream>
 
-int main(){
+int main()
+{
     int a,b,c=0;
-    std::cout<<"Escribe el numero A: \n";
-    std::cin>>a;
-    std::cout<<"Escribe el numero B: \n";
-    std::cin>>b;
+    cout<<"Escribe el numero A: \n";
+    cin>>a;
+    cout<<"Escribe el numero B: \n";
+    cin>>b;
+
+    // Si el número A es menor que B, se intercambian
     if (a<b)
         {
             c=b;
@@ -32,7 +36,7 @@ int main(){
         }
         b++;
     }
-    std::cout<<"Existen "<<c<<" pares entre A y B \n";
+    cout<<"Existen "<<c<<" pares entre A y B \n";
     system("pause");
     return 0;
 }

@@ -9,15 +9,17 @@
 
 // Número de ejericio: 30
 
-// Problema planteado:
+// Problema planteado:Calcular la siguiente sucesión
 #include <iostream>
 
-int main(){
+int main()
+{
     float c,n,res;
     c=1;
-    std::cout<<"Introduce el numero de sucesiones: \n";
-    std::cin>>n;
-    for(int i=1;i<=n;i++){
+    cout<<"Introduce el numero de sucesiones: \n";
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
         if(i%2==0){
             res=res-((c+1)/c);
         }
@@ -25,10 +27,10 @@ int main(){
             res=res+((c+1)/c);
         }
         c++;
-        std::cout<<res<<"\n";
+        cout<<res<<"\n";
     }
-    std::cout<<"El resultado es: \n";
-    std::cout<<res<<"\n";
+    cout<<"El resultado es: \n";
+    cout<<res<<"\n";
     system("pause");
     return 0;
 }

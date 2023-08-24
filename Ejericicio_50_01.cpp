@@ -9,23 +9,32 @@
 
 // Número de ejericio: 50
 
-// Problema planteado:
+// Problema planteado:Escribe una función que tome 3 parámetros: dos de tipo enteros y uno de tipo carácter.
+//La función deberá sumar, restar, multiplicar o dividir los valores de los dos primeros
+//parámetros dependiendo del código indicado en el tercer parámetro, y devolver el
+//resultado
 #include <iostream>
 #include <math.h>
 int main(){
     int a,b;
     char c;
     float res;
-    std::cout<<"Escribe un numero: \n";
-    std::cin>>a;
-    std::cout<<"Escribe otro numero: \n";
-    std::cin>>b;
-    std::cout<<"Ingresa una operacion: \n";
-    std::cout<<"S = suma \n";
-    std::cout<<"R = resta \n";
-    std::cout<<"M = multiplicacion \n";
-    std::cout<<"D = division \n";
-    std::cin>>c;
+
+    // Solicitar al usuario que ingrese dos números
+    cout<<"Escribe un numero: \n";
+    cin>>a;
+    cout<<"Escribe otro numero: \n";
+    cin>>b;
+
+    // Solicitar al usuario que elija una operación
+    cout<<"Ingresa una operacion: \n";
+    cout<<"S = suma \n";
+    cout<<"R = resta \n";
+    cout<<"M = multiplicacion \n";
+    cout<<"D = division \n";
+
+    // Realizar la operación correspondiente según el carácter ingresado
+    cin>>c;
     switch (c)
     {
     case 'S':
@@ -41,10 +50,10 @@ int main(){
         res=a/float(b);
         break;
     default:
-        std::cout<<"opearracion no valida \n";
+        cout<<"opearracion no valida \n";
         break;
     }
-    std::cout<<"el resultado es: "<<res<<" \n";
+    cout<<"el resultado es: "<<res<<" \n";
     system("pause");
     return 0;
 }

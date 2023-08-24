@@ -9,7 +9,8 @@
 
 // Número de ejericio: 53
 
-// Problema planteado:
+// Problema planteado:Escriba un programa que permita al usuario obtener los valores de las funciones
+//trigonométricas:
 #include <iostream>
 #include <math.h>
 float factorial(float x){
@@ -21,8 +22,8 @@ float factorial(float x){
 }
 int main(){
     float a,sen=0,cos=0,tan=0;
-    std::cout<<"Introduzca el angulo: \n";
-    std::cin>>a;
+    cout<<"Introduzca el angulo: \n";
+    cin>>a;
     a=a*(3.1416/180);
     for(int i=0;i<=200;i++){
 
@@ -30,12 +31,12 @@ int main(){
         cos=cos+(((pow(-1,i))*(pow(a,(2*i))))/(factorial(2*i)));
     }
     tan=sen/cos;
-    std::cout<<"El seno es: "<<sen<<" \n";
-    std::cout<<"El coseno es: "<<cos<<" \n";
-    std::cout<<"La tangente es: "<<tan<<" \n";
+    cout<<"El seno es: "<<sen<<" \n";
+    cout<<"El coseno es: "<<cos<<" \n";
+    cout<<"La tangente es: "<<tan<<" \n";
     system("pause");
     return 0;
 }
-/*NOTA IMPORTANTE: el calculo es por series de taylor
-  cuando sea 0 aparecera una cifra muy pequena en su
-  lugar y cuando sea infinito una cifra muy grande :)*/
+//NOTA IMPORTANTE: el calculo es por series de taylor
+  //cuando sea 0 aparecera una cifra muy pequena en su
+ // lugar y cuando sea infinito una cifra muy grande :)

@@ -9,7 +9,7 @@
 
 // Número de ejericio: 45
 
-// Problema planteado:
+// Problema planteado:. Calcular la suma de los cuadrados de los primeros 100 primeros números compuestos.
 #include <iostream>
 
 int main() {
@@ -32,8 +32,9 @@ int main() {
             c1 += i * i;
         }
     }
+    // Corregir la resta de 1 en el resultado
 
-    std::cout << "La suma de los cuadrados de los 100 primeros numeros compuestos es: " << c1 - 1 << std::endl;
+    cout << "La suma de los cuadrados de los 100 primeros numeros compuestos es: " << c1 - 1 << endl;
     system("pause");
     return 0;
 }

@@ -10,19 +10,21 @@
 
 // Número de ejericio: 63
 
-// Problema planteado:
+// Problema planteado: Leer un valor numérico y convertirlo a un número romano (1-9999)
 #include <iostream>
 #include <string>
 
-std::string aromano(int n) {
-    if (n <= 0 || n >= 4000) {
+string aromano(int n) {
+    if (n <= 0 || n >= 4000)
+    {
+        // Si el número está fuera del rango aceptable, devuelve "Error".
         return "Error";
     }
 
     const int v[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-    const std::string num[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+    const string num[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
-    std::string res = "";
+    string res = "";
     int i = 0;
 
     while (n > 0) {
@@ -39,14 +41,14 @@ std::string aromano(int n) {
 int main() {
     int n;
 
-    std::cout << "Introduzca un numero: ";
-    std::cin >> n;
+    cout << "Introduzca un numero: ";
+    cin >> n;
 
-    std::string romano = aromano(n);
+    string romano = aromano(n);
     if (romano == "Error") {
-        std::cout << "Fuera del rango \n";
+        cout << "Fuera del rango \n";
     } else {
-        std::cout << "Representacion en romano: " << romano << "\n";
+        cout << "Representacion en romano: " << romano << "\n";
     }
     system("pause");
     return 0;

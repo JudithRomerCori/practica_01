@@ -9,17 +9,21 @@
 
 // Número de ejericio: 37
 
-// Problema planteado:
+// Problema planteado:Obtenga el factorial de un número entero sin emplear el producto
 #include <iostream>
 
-int main(){
+int main()
+{
     int n,c=1;
-    std::cout<<"Escribe un numero: \n";
-    std::cin>>n;
+    cout<<"Escribe un numero: \n";
+    cin>>n;
+
+    // Calcular el factorial utilizando un bucle for
     for(int i=1;i<=n;i++){
         c=c*i;
     }
-    std::cout<<"El factorial es: "<<c<<"\n";
+    // Mostrar el resultado del factorial
+    cout<<"El factorial es: "<<c<<"\n";
     system("pause");
     return 0;
 }
